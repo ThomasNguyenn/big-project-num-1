@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/setting.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/19f3e20565.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../img/logo.svg" alt="">
+        <nav>
+            <ul class="nav--list">
+                <li class="nav--item active">
+                   <a href="#">Home</a> 
+                </li>
+                <li class="nav--item">
+                   <a href="#">Blog</a> 
+                </li>
+                <li class="nav--item">
+                   <a href="#">Services</a> 
+                </li>
+                <li class="nav--item">
+                   <a href="#">About</a> 
+                </li>
+            </ul>
+        </nav>
+        <div class="checking">
+            <div class="notification">
+                <button class="noti-button" id="noti-button">
+                    <ion-icon class="bell" name="notifications-outline"></ion-icon>
+                </button>
+                <span class="noti"></span>
+            </div>
+            <a href="./setting.html" class="setting-in">
+                <img src="../img/avt.jpg" alt="">
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="setting_selector">
+            <div class="setting_section--container">
+                <h3 class="setting_selector--title">Setting</h3>
+                <ul class="setting_selector--list">
+                    <li class="setting_selector--items">
+                        <a href="../src/setting.html" class="active">Public profile</a>
+                    </li>
+                    <li class="setting_selector--items">
+                        <a href="#" class="">Account Setting</a>
+                    </li>
+                    <li class="setting_selector--items">
+                        <a href="#" class="">Notifications</a>
+                    </li>
+                    <li class="setting_selector--items">
+                        <a href="#" class="">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="setting">
+            <form class="setting_form" action="">
+                <h3 class="setting_form--title">Public profile</h3>
+                <div class="profile_picture">
+                    <img class="profile_picture--avt" src="../img/avt.jpg" alt="">
+                    <div class="change_avt--container">
+                        <label for="change-avt" class="change_avt--btn">
+                            <span class="change_avt--title">
+                                Change Picture
+                            </span>
+                            <input type="file" name="" id="change-avt" hidden>
+                        </label>
+                        <button class="delete_avt--btn">Delete Picture</button>
+                    </div>
+                </div>
+                <div class="setting_section">
+                    <label for="first-name" class="first-name">
+                        <h5>First name</h5>
+                        <input id="first-name" type="text" value="Duc">
+                    </label>
+                    <label for="last-name" class="last-name">
+                        <h5>Last Name</h5>
+                        <input id="last-name" type="text" value="Nguyen">
+                    </label>
+                    <label for="location" class="location">
+                        <h5>Location</h5>
+                        <input id="location" type="text" value="Viet Nam">
+                    </label>
+                    <label for="profession" class="profession">
+                        <h5>Profession</h5>
+                        <input id="profession" type="text" value="Developer">
+                    </label>
+                    <label for="bio" class="bio">
+                        <h5>Bio</h5>
+                        <textarea name="" id="bio" cols="30" rows="10">This is default Bio</textarea>
+                    </label>
+                </div>
+                <div class="presence_container">
+                    <h3 class="presence_container--title">
+                        Online Presence
+                    </h3>
+                    <ul class="presence_container--list">
+                        <li class="presence_container--item">
+                            <input type="text">
+                        </li>
+                        <li class="presence_container--item">
+                            <input type="text">
+                        </li>
+                    </ul>
+                    <button class="add-btn">
+                        <ion-icon name="add"></ion-icon> Add other
+                    </button>
+                </div>
+                <button type="submit" class="save-btn">Save</button>
+            </form>
+            
+        </section>
+    </main>
+</body>
+</html>
