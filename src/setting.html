@@ -4,26 +4,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/setting.css">
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="https://kit.fontawesome.com/19f3e20565.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="" id="header">
         <img class="logo" src="../img/logo.svg" alt="">
         <nav>
-            <ul class="nav--list">
+            <ul class="nav--list ">
                 <li class="nav--item active">
-                   <a href="#">Home</a> 
+                   <a href="#" class="" id="a">Home</a> 
                 </li>
                 <li class="nav--item">
-                   <a href="#">Blog</a> 
+                   <a href="#" class="" id="a">Blog</a> 
                 </li>
                 <li class="nav--item">
-                   <a href="#">Services</a> 
+                   <a href="#" class="" id="a">Services</a> 
                 </li>
                 <li class="nav--item">
-                   <a href="#">About</a> 
+                   <a href="#" class="" id="a">About</a> 
                 </li>
             </ul>
         </nav>
@@ -37,24 +35,53 @@
             <a href="./setting.html" class="setting-in">
                 <img src="../img/avt.jpg" alt="">
             </a>
+            <div class="btn--setting_container">
+                <button class="btn--setting" id="btn--setting_container">
+                    <ion-icon name="arrow-dropdown"></ion-icon>
+                </button>
+                <div id="nav_menu--setting" class="nav_menu--setting nav-menu--dark">
+                    <div class="nav_menu--bio">
+                        <img class="profile_avt--menu" src="../img/avt.jpg" alt="">
+                        <div class="nav--bio">
+                            <span class="nav_bio--name">Nguyễn Minh Đức</span>
+                            <a href="#">Xem trang cá nhân của bạn</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="nav_menu--item">
+                        <a href="#">Cài đặt & quyền riêng tư</a>
+                    </div>
+                    <hr>
+                    <div class="nav_menu--item">
+                        <span>Chế độ tối</span>
+                        <div id="dark-btn">
+                            <span></span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="nav_menu--item">
+                        <a href="#">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-    <main>
+    <main id="main" class="">
         <section class="setting_selector">
             <div class="setting_section--container">
                 <h3 class="setting_selector--title">Setting</h3>
                 <ul class="setting_selector--list">
                     <li class="setting_selector--items">
-                        <a href="../src/setting.html" class="active">Public profile</a>
+                        <a href="../src/setting.html" class="active " id="a">Public profile</a>
                     </li>
                     <li class="setting_selector--items">
-                        <a href="#" class="">Account Setting</a>
+                        <a href="#" class="" id="a">Account Setting</a>
                     </li>
                     <li class="setting_selector--items">
-                        <a href="#" class="">Notifications</a>
+                        <a href="#" class="" id="a">Notifications</a>
                     </li>
                     <li class="setting_selector--items">
-                        <a href="#" class="">Log Out</a>
+                        <a href="#" class="" id="a">Log Out</a>
                     </li>
                 </ul>
             </div>
@@ -109,7 +136,7 @@
                             <input type="text">
                         </li>
                     </ul>
-                    <button class="add-btn">
+                    <button class="add-btn" id="btn-cj">
                         <ion-icon name="add"></ion-icon> Add other
                     </button>
                 </div>
@@ -118,5 +145,11 @@
             
         </section>
     </main>
+
+
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/19f3e20565.js" crossorigin="anonymous"></script>
+    <script src="../script/setting-menu.js"></script>
 </body>
 </html>
